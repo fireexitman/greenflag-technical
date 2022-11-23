@@ -1,0 +1,16 @@
+<div class="container" [ngClass]="{'mobileMode': isMobile === true}">
+    <header>
+        <h1 class="page-title">Have a question? We can help</h1>
+    </header>
+    <accordion [isMobile]="isMobile" *ngFor="let faq of faqs">
+        <div class="question" accordion-number>
+            Q{{faq.id}}
+        </div>
+        <div class="accordion-title" accordion-title>
+            {{faq.question}}
+        </div>
+        <div class="body" accordion-body>
+            {{faq.answer}}
+        </div>
+    </accordion>
+</div>

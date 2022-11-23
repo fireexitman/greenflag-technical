@@ -1,0 +1,30 @@
+.accordion-container {
+    border-bottom: 0.3em solid black;
+    margin: 0 auto;
+    min-height: 2em;
+    max-width: 62.5em;
+    padding: 1.5em;
+}
+.accordion {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+
+    .accordion-icon {
+        background-color: yellow;
+        cursor: pointer;
+        display: inline-flex;
+        height: 3em;
+        min-width: 3.5em;
+
+        svg {
+            margin: auto;
+        }
+    }
+}
+.selected {
+    background-color: lightgrey;
+}
+.mobileMode {
+    padding: 0;
+}
